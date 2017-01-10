@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
   get '/capstones' => 'capstones#index'
-  get '/capstones/:id' => "capstones#show"
+  get '/capstone/:id' => 'capstones#show'
+  
 end
