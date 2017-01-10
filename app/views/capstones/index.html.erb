@@ -1,0 +1,5 @@
+<% @students.each do |student| %>
+  <h3><a href="/students/<%= student["id"] %>"><%= student["first_name"] %> <%= student["last_name"] %></a></h3>
+  <div>Capstone Title: <%= student["capstone"]["name"] %></div>
+  <img src="<%= student["capstone"]["screenshot"] %>">
+<% end %>
