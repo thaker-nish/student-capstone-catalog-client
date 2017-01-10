@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  get "/" => "catalogs#index"
+
+  get '/' => 'capstones#index'
+  get "/capstones/:id" => "capstones#show"
+
 end
