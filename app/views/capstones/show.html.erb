@@ -1,4 +1,5 @@
 <h1><%=@capstone["name"]%></h1>
-<h3>Capstone Title: <%=@capstone[""]%></h3>
-<img>
-<p><%= @capstone[""]%></p>
+<h3>Capstone Title:  <a href=<%="@capstone["capstone"]["url"]"%>><%=@capstone["name"]%></a></h3>
+<%= @capstone["capstone"]["screenshot"] %>
+<p><%= @capstone["description"]%></p>
+<a href="/capstones" >Back to Index</a>
