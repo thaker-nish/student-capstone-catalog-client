@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  get 'index' => 'pages#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get '/' => 'capstones#index'
+  get "/capstones/:id" => "capstones#show"
+
 end
