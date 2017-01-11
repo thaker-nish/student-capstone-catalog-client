@@ -1,5 +1,10 @@
-<h1>Hello World</h1>
+<h1>Capstones:</h1>
 <% @students.each do |student| %>
-  <%= student["name"] %>
+  <h2>Student Name: <%= student["name"] %> </h2>
+  <% student["capstones"].each do |capstone| %>
+    <h3>Capstone: <%= capstone["name"] %> </h3>
+    <p>Capstone Description: <%= capstone["description"] %></p>
+    <img src ="<%= capstone['url'] %>"/>
+  <% end %>
 <% end %>
 
