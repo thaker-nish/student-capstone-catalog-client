@@ -1,11 +1,11 @@
 class CapstonesController < ApplicationController
   def index
-    @capstones = Unirest.get("https://Resume Data API").body
+    @students = Unirest.get("https://desolate-island-36210.herokuapp.com/").body
     render 'index.html.erb'
   end
 
   def show
-    @capstone = Unirest.get("https://Resume Data API").body
+    @students = Unirest.get("https://desolate-island-36210.herokuapp.com/").body
     render 'show.html.erb'
   end
 end
